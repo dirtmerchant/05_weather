@@ -55,8 +55,6 @@ def get_weather_from_html(html):
     temp = cleanup_text(temp)
     scale = cleanup_text(scale)
 
-    # print(condition, temp, scale, loc)
-    # return condition, temp, scale, loc
     report = WeatherReport(cond=condition, temp=temp, scale=scale, loc=loc)
     return report
     return condition
